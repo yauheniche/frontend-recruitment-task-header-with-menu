@@ -1,0 +1,43 @@
+* {
+  background-color: aquamarine;
+}
+
+.icon {
+  display:inline-block;
+  height: 12px;
+  width: 12px;
+}
+
+.icon_phone {
+  background: url('./src/icons/phone-icon.svg') no-repeat;
+}
+
+.icon_mail {
+  background: url('./src/icons/mail-icon.svg') no-repeat;
+}
+
+.icon_log-in {
+  background: url('./src/icons/log-in-icon.svg') no-repeat;
+}
+
+.icon_sign-in {
+  background: url('./src/icons/sign-in-icon.svg') no-repeat;
+}
+
+.account-buttons__button {
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.account-buttons__button:nth-child(odd){
+  border-right: none;
+}
+
+.basket__icon {
+  height: 32px;
+  width: 32px;
+  background: url('./src/icons/basket-icon.svg') no-repeat;
+}
+
