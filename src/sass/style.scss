@@ -1,28 +1,22 @@
 @import "abstracts/variables.scss";
+@import "abstracts/mixins";
 
 @import "base/normalize";
 @import "base/base";
 @import "base/icons";
 
 @import "layout/wrapper";
+@import "layout/header";
+
+@import "components/buttons";
 
 
-* {
-  background-color: $main-color;
-  font-family: 'Lato', sans-serif;
-}
 
 
-.account-buttons__button {
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-top: 0;
-  border-bottom: 0;
-}
 
-.account-buttons__button:nth-child(odd){
-  border-right: none;
-}
+
+
+
 
 .basket__icon {
   height: 32px;

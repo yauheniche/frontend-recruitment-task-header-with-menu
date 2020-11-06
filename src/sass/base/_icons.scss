@@ -1,21 +1,22 @@
 .icon {
   display:inline-block;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
+  margin-right: $icon-margin;
 }
 
 .icon_phone {
-  background: url('../icons/phone-icon.svg') no-repeat;
+  background: center url('../icons/phone-icon.svg') no-repeat;
 }
 
 .icon_mail {
-  background: url('../icons/mail-icon.svg') no-repeat;
+  background: center url('../icons/mail-icon.svg') no-repeat;
 }
 
 .icon_log-in {
-  background: url('../icons/log-in-icon.svg') no-repeat;
+  background: center url('../icons/log-in-icon.svg') no-repeat;
 }
 
 .icon_sign-in {
-  background: url('../icons/sign-in-icon.svg') no-repeat;
+  background: center url('../icons/sign-in-icon.svg') no-repeat;
 }

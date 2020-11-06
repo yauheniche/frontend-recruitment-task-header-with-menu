@@ -1,0 +1,26 @@
+.header {
+  &__top {
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .contacts,
+    .account-buttons{
+      height: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    height: $header-top-fixed-height;
+    border-bottom: $header-border;
+
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    max-width: 2000px;
+    width: 100%;
+    top: 0;
+  }
+}
