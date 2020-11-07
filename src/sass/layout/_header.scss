@@ -1,26 +1,56 @@
 .header {
-  &__top {
-    .wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  &__fixed {
+    position: fixed;
+    top: 0;
+    height: $header-top-fixed-height;
+    border-bottom: $main-border;
+    box-sizing: border-box;
+    max-width: 2000px; //for develop
+    width: 100%;
 
     .contacts,
     .account-buttons{
-      height: 100%;
       display: flex;
-      flex-wrap: nowrap;
+      height: 100%;
+    }
+  }
+
+  &__middle {
+    margin-top: $header-top-fixed-height;
+    .wrapper {
+      padding-top: 20px;
     }
 
-    height: $header-top-fixed-height;
-    border-bottom: $header-border;
+    .search-form {
+      margin-top: 10px; 
+      width: 40%;
+      
+      position: relative;
+      right: -7%;
+    }
 
-    display: flex;
-    position: fixed;
-    box-sizing: border-box;
-    max-width: 2000px;
-    width: 100%;
-    top: 0;
+    .basket {
+      margin-top: 20px;
+      margin-right: 38px;
+    }
   }
+
+  @media (max-width: $content-width) {
+    &__middle {
+      .search-form {
+        right: 0;
+      }
+      .basket {
+        margin-right: 5px;
+      }
+    }
+  }  
+
+  @media (max-width: $mobile-width) {
+    &__middle {
+      .wrapper {
+        padding-top: 0;
+      }
+    }
+  }  
 }

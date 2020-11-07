@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <div class="header__top">
+    <div class="header__fixed">
       <div class="wrapper">
         <div class="contacts">
           <a class="link" href="tel:+48293939098">
@@ -33,16 +33,20 @@
       </div>
       
     </div>
-    <h1 class="logo"><img src="./src/icons/logo.svg" alt="Aurora box"></h1>
-      <form class="search-form" action="#">
-        <input class="search-form__input" type="text" placeholder="Co chcesz kupić?" name="search">
-        <button class="search-form__button" type="submit"><span class="icon icon_phone"></span></button>
-      </form>
-      <div class="basket">
-        <h5 class="basket__title">Twój koszyk</h5>
-        <span class="basket__icon icon"></span> 
-        <span class="basket__goods-number">2</span>
+    <div class="header__middle">
+      <div class="wrapper">
+        <h1 class="logo"><img src="./src/icons/logo.svg" alt="Aurora box"></h1>
+        <form class="search-form" action="#">
+          <input class="search-form__input" type="text" placeholder="Co chcesz kupić?" name="search">
+          <button class="search-form__button" type="submit"><span class="icon icon_search"></span></button>
+        </form>
+        <div class="basket">
+          <h3 class="basket__title">Twój koszyk</h3>
+          <span class="basket__icon icon"></span> 
+          <span class="basket__goods-number">2</span>
+        </div>
       </div>
+    </div>
     <nav class="navigation">
       <div class="dropdown">
         <a class="navigation__link">Kategorie</a>

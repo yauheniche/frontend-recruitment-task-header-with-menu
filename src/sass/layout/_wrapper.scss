@@ -1,13 +1,11 @@
 .wrapper {
+  @include flex;
   width: 70%;
   max-width: $content-width;
   height: 100%;
   margin: auto;
 
   @media (max-width: $tablet-width) {
-    width: 80%;
-  }
-  @media (max-width: $mobile-width) {
     width: 90%;
   }
 }

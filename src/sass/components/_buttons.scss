@@ -14,20 +14,21 @@
 }
 
 .account-buttons{
-
   &__button {
+    
     margin: 0;
-    border-left: $header-border;
+    border-left: $main-border;
     padding: 0 $link-indent;
-
+    min-width: $account-buttons-min-width;
     &:last-child {
-      border-right: $header-border;
+      border-right: $main-border;
     }
   }
 }
 
 .contacts{ 
   .link__description {
+    min-width: 73px;
     @media (max-width: $tablet-width) {
       display: none;
     }

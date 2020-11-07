@@ -6,4 +6,12 @@
   color: $color;
 }
 
+@mixin flex ($direction: row, $align-items: center, $justify-content: space-between, $flex-wrap: nowrap){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+}
+
 

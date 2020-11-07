@@ -1,0 +1,21 @@
+.search-form {
+  height: $form-height;
+  box-sizing: border-box;
+  border-bottom: $main-border;
+  min-width: 190px;
+
+  @include flex;
+  @include font(1.4rem, $weight: normal);
+  * {
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background-color: $main-background;
+  }
+
+  &__input {
+    width: 100%;
+    opacity: 0.5;
+    padding-left: 5px;
+  }
+}

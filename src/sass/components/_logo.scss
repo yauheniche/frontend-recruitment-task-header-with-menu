@@ -1,0 +1,13 @@
+.logo {
+  margin-right: 10px;
+  @media (max-width: $tablet-width) {
+    img {
+      width: 100px;
+    }
+  }
+  @media (max-width: $mobile-width) {
+    img {
+      width: 70px;
+    }
+  }
+}

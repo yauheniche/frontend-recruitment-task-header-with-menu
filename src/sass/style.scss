@@ -9,6 +9,9 @@
 @import "layout/header";
 
 @import "components/buttons";
+@import "components/forms";
+@import "components/basket";
+@import "components/logo";
 
 
 
@@ -18,8 +21,4 @@
 
 
 
-.basket__icon {
-  height: 32px;
-  width: 32px;
-  background: url('../icons/basket-icon.svg') no-repeat;
-}
+

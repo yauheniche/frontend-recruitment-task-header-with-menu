@@ -5,6 +5,10 @@
   margin-right: $icon-margin;
 }
 
+.icon_search {
+  background: center url('../icons/search-icon.svg') no-repeat;
+}
+
 .icon_phone {
   background: center url('../icons/phone-icon.svg') no-repeat;
 }
@@ -19,4 +23,10 @@
 
 .icon_sign-in {
   background: center url('../icons/sign-in-icon.svg') no-repeat;
+}
+
+.basket__icon {
+  height: 32px;
+  width: 32px;
+  background: url('../icons/basket-icon.svg') no-repeat;
 }
