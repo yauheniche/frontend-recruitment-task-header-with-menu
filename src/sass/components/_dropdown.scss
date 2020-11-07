@@ -1,0 +1,33 @@
+.dropdown {
+  position: relative;
+
+  &__content { 
+    @extend %dropdown-template;
+  }
+  
+  &__content_secondary {
+    @extend %dropdown-template;
+    line-height: 8px;
+
+    .dropdown__item:hover {
+      background-color: #fff;
+      color: $secondary-background;
+    }
+  }
+
+  &:hover .dropdown__content {
+    display: block;
+  }
+  
+  .dropdown{
+
+    &:hover {
+      .dropdown__content_secondary {
+        display: block;
+        left: 160px;
+        top: -10px;
+      }
+    }
+  } 
+}
+

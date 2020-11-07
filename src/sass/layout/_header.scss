@@ -35,6 +35,12 @@
     }
   }
 
+  &__navigation {
+    margin-top: 17px;
+  }
+
+  
+
   @media (max-width: $content-width) {
     &__middle {
       .search-form {
