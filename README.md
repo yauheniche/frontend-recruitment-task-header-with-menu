@@ -1,16 +1,17 @@
 <img  src="https://github.com/auroracreation/frontend-recruitment-task-header-with-menu/blob/master/logo.png"  alt="Aurora Creation logo"/>
 
-# Zadanie rekrutacyjne Frontend - stworzenie headera wraz z menu
+# Uruchamianie aplikacji z komputera lokalnego.
 
 
-## Treść
+### klonuj na komputer lokalny 
 
-Twoim zadaniem będzie stworzenie **jedynie** elementu header z menu (nie całej strony). Głównym celem ćwiczenia jest sprawdzenie jak radzisz sobie z kodowaniem szablonu z PSD do HTML.
 
-W twoim rozwiązaniu muszą się znaleźć **jedynie** elementy:
-- górna belka
-- logo, wyszukiwarka, koszyk
-- menu kategorii
+<code>git clone https://github.com/yauheniche/frontend-recruitment-task-header-with
+-menu.git </code>
+
+
+### Przejdź do folderu <strong>frontend-recruitment-task-header-with-menu</strong> 
+
 
 
 ## Plik źródłowy
