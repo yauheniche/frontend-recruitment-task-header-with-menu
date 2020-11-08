@@ -1,5 +1,5 @@
-const a = () => {
-  console.log('1')
-} 
+const form = document.querySelector('.search-form');
 
-export default a
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+})

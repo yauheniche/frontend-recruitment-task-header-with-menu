@@ -10,7 +10,7 @@
     line-height: 8px;
 
     .dropdown__item:hover {
-      background-color: #fff;
+      background-color: $main-background;
       color: $secondary-background;
     }
   }
@@ -25,7 +25,7 @@
       .dropdown__content_secondary {
         display: block;
         left: 160px;
-        top: -10px;
+        top: -$standard-indent;
       }
     }
   } 

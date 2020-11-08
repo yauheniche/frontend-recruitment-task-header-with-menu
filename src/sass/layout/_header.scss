@@ -1,12 +1,12 @@
 .header {
+  border-bottom: $main-border;
   &__fixed {
+    @include size ($height: $header-top-fixed-height, $width: 100%);
+    border-bottom: $main-border;
+    background-color: $main-background;
     position: fixed;
     top: 0;
-    height: $header-top-fixed-height;
-    border-bottom: $main-border;
     box-sizing: border-box;
-    max-width: 2000px; //for develop
-    width: 100%;
 
     .contacts,
     .account-buttons{
@@ -17,21 +17,21 @@
 
   &__middle {
     margin-top: $header-top-fixed-height;
+    
     .wrapper {
-      padding-top: 20px;
+      padding-top: $double-indent;
     }
 
     .search-form {
-      margin-top: 10px; 
-      width: 40%;
-      
+      margin-top: $standard-indent; 
+      width: 40%; 
       position: relative;
       right: -7%;
     }
 
     .basket {
-      margin-top: 20px;
-      margin-right: 38px;
+      margin-top: $double-indent;
+      margin-right: $double-indent*2;
     }
   }
 
@@ -39,15 +39,14 @@
     margin-top: 17px;
   }
 
-  
-
   @media (max-width: $content-width) {
     &__middle {
       .search-form {
         right: 0;
       }
+
       .basket {
-        margin-right: 5px;
+        margin-right: $half-indent;
       }
     }
   }  

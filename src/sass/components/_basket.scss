@@ -19,8 +19,7 @@
     @include flex($justify-content:center);
     @include font(1.2rem, $color: #fff);
 
-    height: 20px;
-    width: 20px;
+    @include size ($height: 20px, $width: 20px);
     border-radius: 50%;
     background-color: $secondary-background;
     z-index: 1;

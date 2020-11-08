@@ -1,25 +1,24 @@
 .link {
+  @include font ($size: 1.3rem, $weight: normal);
+  margin-right: $standard-indent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
 
   &:hover {
     transition: all .2s;
     color: #aaa;
   }
-
-  @include font ($size: 1.3rem, $weight: normal);
-  text-decoration: none;
-  margin-right: $link-indent;
-  display: inline-flex;
-  align-items: center;
-  height: 100%;
 }
 
 .account-buttons{
-  &__button {
-    
+  &__button {    
     margin: 0;
     border-left: $main-border;
-    padding: 0 $link-indent;
+    padding: 0 $standard-indent;
     min-width: $account-buttons-min-width;
+    
     &:last-child {
       border-right: $main-border;
     }

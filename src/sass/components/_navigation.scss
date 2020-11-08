@@ -6,7 +6,7 @@
     @include font(1.4rem);
     cursor: pointer;
     text-transform: uppercase;
-    padding: 15px 15px 15px 0;
+    padding: 15px $standard-indent $standard-indent 0;
     letter-spacing: 1px;
 
     &:last-child {

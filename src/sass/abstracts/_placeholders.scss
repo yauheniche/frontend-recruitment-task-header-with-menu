@@ -1,12 +1,12 @@
 %dropdown-template {
+  background-color: $main-background;
+  padding-top: $standard-indent;
   display: none;
   position: absolute;
-  background-color: #fff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: 40px;
-  padding-top: 10px;
+  top: $double-indent*2;
   letter-spacing: normal;
   
   .dropdown__item {
@@ -17,7 +17,7 @@
     text-transform: none;
 
     &:hover {
-      background-color: #f7f7f7;
+      background-color: $dropdown-hovered-background;
     }
   }
 }

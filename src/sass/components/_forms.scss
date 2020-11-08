@@ -7,15 +7,15 @@
   @include flex;
   @include font(1.4rem, $weight: normal);
   * {
+    background-color: $main-background;
     height: 100%;
     padding: 0;
     border: 0;
-    background-color: $main-background;
   }
 
   &__input {
+    padding-left: $half-indent;
     width: 100%;
     opacity: 0.5;
-    padding-left: 5px;
   }
 }

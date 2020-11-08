@@ -13,3 +13,8 @@
   justify-content: $justify-content;
   flex-wrap: $flex-wrap;
 }
+
+@mixin size ($height, $width){
+  height: $height;
+  width: $width;
+}

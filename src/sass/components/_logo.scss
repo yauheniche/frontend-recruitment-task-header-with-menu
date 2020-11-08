@@ -1,13 +1,13 @@
 .logo {
-  margin-right: 10px;
+  margin-right: $standard-indent;
   @media (max-width: $tablet-width) {
     img {
-      width: 100px;
+      @include size ($height: 100px, $width: 100px);
     }
   }
   @media (max-width: $mobile-width) {
     img {
-      width: 70px;
+      @include size ($height: 100px, $width: 100px);
     }
   }
 }
