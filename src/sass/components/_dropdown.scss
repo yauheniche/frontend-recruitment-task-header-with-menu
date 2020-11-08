@@ -3,11 +3,15 @@
 
   &__content { 
     @extend %dropdown-template;
+    & > .dropdown__item {
+      @extend %background-animation;
+    }
   }
-  
+
   &__content_secondary {
     @extend %dropdown-template;
     line-height: 8px;
+    overflow: hidden;
 
     .dropdown__item:hover {
       background-color: $main-background;

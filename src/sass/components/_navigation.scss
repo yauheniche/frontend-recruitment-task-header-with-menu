@@ -8,6 +8,7 @@
     text-transform: uppercase;
     padding: 15px $standard-indent $standard-indent 0;
     letter-spacing: 1px;
+    
 
     &:last-child {
       padding-right: 0;
@@ -15,6 +16,7 @@
 
     &:hover {
       color: $secondary-background;
+      transition: all .3s;
     }
   }
 

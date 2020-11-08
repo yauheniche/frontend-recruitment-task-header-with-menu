@@ -8,6 +8,22 @@
   z-index: 1;
   top: $double-indent*2;
   letter-spacing: normal;
+  animation: growDown 300ms ease-in-out;
+  
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0);
+        height: 0;
+    }
+    50% {
+        transform: scaleY(1.1);
+        height: 100px;
+    }
+    100% {
+        transform: scaleY(1);
+        height: 200px;
+    }
+  }
   
   .dropdown__item {
     @include font(1.4rem, $weight: normal);
@@ -17,7 +33,18 @@
     text-transform: none;
 
     &:hover {
-      background-color: $dropdown-hovered-background;
+      background-color: $hovered-background;
     }
+  }
+}
+
+%background-animation {
+  background: linear-gradient(to left, $main-background 50%, $hovered-background 50%) right;
+  background-size: 200%;
+  transition: background-position .3s;
+
+  &:hover {
+    transition: 1s;
+    background-position: left;
   }
 }

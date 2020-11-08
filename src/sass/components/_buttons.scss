@@ -1,15 +1,11 @@
 .link {
   @include font ($size: 1.3rem, $weight: normal);
-  margin-right: $standard-indent;
+  @extend %background-animation;
+  padding-right: $standard-indent;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   height: 100%;
-
-  &:hover {
-    transition: all .2s;
-    color: #aaa;
-  }
 }
 
 .account-buttons{
