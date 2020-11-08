@@ -1,5 +1,5 @@
 const form = document.querySelector('.search-form');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault()
+  return e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 })

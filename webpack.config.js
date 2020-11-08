@@ -18,7 +18,6 @@ module.exports = (env = {}) => {
   const getPlugins = () => {
     const plugins = [
       new HtmlWebpackPlugin({
-        title: 'Hello World',
         buildTime: new Date().toISOString(),
         template: 'index.html'
       })
@@ -58,19 +57,12 @@ module.exports = (env = {}) => {
             loader: 'file-loader',
             options: {
               outputPath: 'images',
-              name: '[name]-[sha1:hash:7].[ext]'
+              name: '[name].[ext]'
             }
           }
         ]
       },
 
-      // Loading CSS
-      // {
-      //   test: /\.(css)$/,
-      //   use: getStyleLoaders()
-      // },
-
-      // Loading SASS/SCSS
       {
         test: /\.(s[ca]ss)$/,
         use: [ ...getStyleLoaders(), 'sass-loader' ]
