@@ -1,6 +1,8 @@
 .basket {
   @include flex($direction: row-reverse, $align-items: top);
-
+  position: relative;
+  margin-left: $standard-indent;
+  
   &:hover {
     cursor: pointer;
   }
@@ -18,14 +20,15 @@
   &__goods-number {
     @include flex($justify-content:center);
     @include font(1.2rem, $color: #fff);
-
     @include size ($height: 20px, $width: 20px);
+    
     border-radius: 50%;
     background-color: $secondary-background;
     z-index: 1;
-    position: relative;
-    left: 36px;
+    position: absolute;
+    left: 15px;
     top: 15px;
+    
   }
 
   @media (max-width: $tablet-width) {
@@ -33,6 +36,12 @@
       &__title {
         display: none;
       }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    img {
+      @include size ($height: 90px, $width: 90px);
     }
   }
 }

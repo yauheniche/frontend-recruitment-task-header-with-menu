@@ -57,5 +57,11 @@
         padding-top: 0;
       }
     }
-  }  
+  } 
+  
+  @media (max-width: $mobile-width) {
+    &__navigation {
+      margin-top: 0;
+    }
+  }
 }

@@ -21,6 +21,15 @@
       background-color: $hovered-background;
     }
   }
+
+    
+  @media (max-width: $mobile-width) {
+    min-width: 150px;
+
+    .dropdown__item {
+      padding: $standard-indent;
+    }
+  }
 }
 
 %background-animation {

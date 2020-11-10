@@ -33,5 +33,16 @@
       }
     }
   } 
+
+  @media (max-width: $mobile-width) {
+    
+    .dropdown{
+      &:hover {
+        .dropdown__content_secondary {
+          left: 150px;
+        }
+      }
+    }
+  }
 }
 
