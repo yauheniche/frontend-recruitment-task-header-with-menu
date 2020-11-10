@@ -18,4 +18,8 @@
     width: 100%;
     opacity: 0.5;
   }
+
+  @media (max-width: $tablet-width) {
+    min-width: 140px;
+  }
 }
